@@ -1,32 +1,52 @@
-function addElementToBeginningOfArray(arry,elmt){
+var chocolateBars= ["snickers", "hundred grand", "kitkat", "skittles"]
 
-return arry.unshift(elmt)
+
+function addElementToBeginningOfArray(arry,elmt){
+var newarry
+
+newarry=[elmt, ...arry]
+
+return newarry
 
 }
 
 
 
 function destructivelyAddElementToBeginningOfArray(arry,elmt){
-var newarry
 
-newarry = [elmt, ...arry]
+arry.unshift(elmt)
 
-return newarry
+return arry
 
 }
 
 function addElementToEndOfArray(arry,elmt){
+var newarry
 
-return arry.push(elmt)
+newarry=[...arry, elmt]
+
+return newarry
 
 }
 
 
 function destructivelyAddElementToEndOfArray(arry,elmt){
-var newarry
 
-newarry = [...arry, elmt]
+arry.push(elmt)
 
-return newarry
+return arry
 
+}
+
+function accessElementInArray(arry,indx){
+
+  return arry[indx]
+}
+
+
+function destructivelyRemoveElementFromBeginningOfArray(arry){
+
+arry.shift()
+
+  return arry
 }
