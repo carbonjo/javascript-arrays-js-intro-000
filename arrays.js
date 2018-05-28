@@ -50,3 +50,9 @@ arry.shift()
 
   return arry
 }
+
+function removeElementFromBeginningOfArray(arry){
+  var newarry
+  newarry=arry.slice(1)
+  return newarry
+}
