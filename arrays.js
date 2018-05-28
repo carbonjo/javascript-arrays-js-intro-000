@@ -56,3 +56,11 @@ function removeElementFromBeginningOfArray(arry){
   newarry=arry.slice(1)
   return newarry
 }
+
+function destructivelyRemoveElementFromEndOfArray(arry){
+
+arry.pop()
+
+return arry
+
+}
