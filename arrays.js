@@ -71,5 +71,5 @@ var newarry
 newarry=arry.slice(0,arry.length - 1)
 
 return newarry
-  
+
 }
